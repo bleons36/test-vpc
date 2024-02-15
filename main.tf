@@ -1,10 +1,9 @@
-//--------------------------------------------------------------------
-// Modules
 provider "aws" {
   access_key = var.AWS_ACCESS_KEY_ID
   secret_key = var.AWS_SECRET_ACCESS_KEY
   region     = "ap-northeast-2"
 }
+
 module "network" {
   source  = "app.terraform.io/sulee/network/aws"
   version = "1.0.0"
